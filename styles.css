@@ -135,7 +135,7 @@
 .services-row{
     display: flex;
     flex-wrap: wrap;
-    border-radius: 15px !important;
+    
 }
 .services-item{
     display: block;
@@ -166,4 +166,39 @@
     transition: .3s;
     border-color: #1743df;
     text-decoration: none!important
+}
+
+.populars_new_products_choose{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #232d40;
+    margin-bottom: 3rem;
+}
+.popular_or_new{
+    opacity: .3;
+    color: inherit;
+    font-weight: inherit;
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+.popular_or_new_active{
+    opacity: 1;
+}
+.btn{
+    box-shadow: 0 20px 50px rgb(0 0 0 / 5%), 0 5.94853px 15.1177px rgb(0 0 0 / 3%), 0 3.13211px 7.0172px rgb(0 0 0 / 3%), 0 1.1945px 3.02304px rgb(0 0 0 / 2%);
+    width: 3.3rem;
+    height: 3.3rem;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin-left: 1rem;
+
+}
+.arrow{
+    font-size: 1rem;
+    font-weight: 300;
 }
