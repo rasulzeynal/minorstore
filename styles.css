@@ -1,0 +1,169 @@
+.container{
+    padding: 0 !important;
+}
+.slider{
+    background-color: #95979c;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.slider-image{
+    height: 365px;
+}
+.special-offer-header{
+    background-color:#ffd436 ;
+    color: #232d40;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    letter-spacing: -.02em;
+}
+.special-offer{
+    border:2px solid #ffd436 ;
+    border-radius:12px ;
+}
+.item-special{
+    padding: 10px 0 10px 20px;
+}
+.time{
+    padding: 10px 20px 10px 0;
+}
+.producuct-info{
+    padding: 20px !important;
+}
+.producuct-info-brand-title{
+    color: #232d40;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    letter-spacing: -.02em;
+    font-weight: 700;
+    text-decoration: none;
+}
+.producuct-info_brand{
+    width: 80px;
+    height: 15px;
+    cursor:grab;
+    margin-top: 5px;
+}
+.product-image{
+    width: 160px;
+    height: 160px;
+    padding: 14px 21px;
+    text-decoration: none;
+}
+.product-info-labels{
+    text-align: end;
+}
+.product__label{
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 0.3rem 0.5rem;
+    overflow: hidden;
+    display: inline-flex !important; 
+    border-radius: 7px !important;
+    cursor:grab;
+    margin-top: 5px;
+}
+.product__label--purple{
+    background: rgba(23,67,223,.07);
+    color: #1743df!important;
+    border: none;
+}
+.product__label--orange{
+    background: rgba(246,134,31,.07);
+    color: #f6861f!important;
+    border: none;
+}
+.product__label--border{
+    border: 1px solid currentColor;
+}
+.icon{
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.old-price{
+    color: #95979c;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1rem;
+    margin-bottom: 2px;
+    text-decoration: line-through;
+}
+.new-price{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.btn{
+   display: inline-flex;
+   border-radius: 6px;
+   border: 1px solid currentColor;
+   font-weight: 600;
+   align-items: center;
+   box-sizing: border-box;
+   padding: 0.8rem 1.6rem 0.8rem 2rem;
+   transition: all ease-in-out 0.3s;
+   font-size: 1rem;
+}
+.btn-orange{
+    color: #fff;
+    background-color: #f6861f;
+}
+.btn-orange:hover{
+    color: #f6861f;
+    background-color: #fff ;
+    border: 1px solid #f6861f;
+}
+.btn-green{
+    color: #fff;
+    background-color:#40b659 ;
+    height: 100%;
+}
+.btn-green:hover{
+    color:#40b659;
+    background-color:#fff ;
+    border: 1px solid #40b659;
+}
+
+/* Banner bitdi */
+
+.services-row{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px !important;
+}
+.services-item{
+    display: block;
+    background: #fafbfc;
+    padding: 3.6rem 0.5rem;
+    text-align: center;
+    color: #232d40;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+.services-item-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ccc;
+}
+.services-icon{
+    color: #40b659 !important;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+.services-info{
+    color: #232d40 !important;
+    font-weight: 600;
+    background-color: transparent;
+    transition: .3s;
+    border-color: #1743df;
+    text-decoration: none!important
+}

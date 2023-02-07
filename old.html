@@ -1,0 +1,274 @@
+<section class="container banner">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-xs-12 col-md-9">
+        <script>
+            var my_slider = new MySlider();
+        </script>
+    </div>
+    <div class="col-xs-12 col-md-3 p-0">
+        <div class="counter style1 v2 top-special-offer w-100 h-100 p-0">
+            <div class="special-offer-header d-flex justify-content-between ">
+                <span class="item-special" >Doğru seçim ❤️</span>
+                <div class="counter-content m-0">
+                <div class="count-down d-flex align-items-center m-0">
+                    <span class="time">06 Gün 18:42:56</span>
+                </div>
+                
+                <!-- /.count-down -->
+                <!--<div class="box-content">
+                    <div class="special-slider owl-carousel-1">
+                        @foreach($sps as $spss)
+                            <div class="special-slider-item">
+                                <div class="ssitem-img">
+                                    <a href="{{ route('site.product.show', [\App\Http\Helpers::recursionParent($spss->category)."/".$spss->trans->slug_pr]) }}"><img
+                                                src="{{ asset('/images/product/x131/'.$spss->image) }}"
+                                                alt=""></a>
+                                </div>
+                                <div class="ssitem-tt"><a
+                                            href="{{ route('site.product.show', [\App\Http\Helpers::recursionParent($spss->category)."/".$spss->trans->slug_pr]) }}">{{ $spss->trans->name }}</a>
+                                </div>
+                                <div class="ssitem_price_add">
+                                    <div class="price ssitem_price">
+                                                    <span class="regular">{{ $spss->price }}<span
+                                                                class="azcurrency">M</span></span>
+                                        <span class="sale">{{ $sp_pr[$spss->id]['special_price'] ?? '' }}<span
+                                                    class="azcurrency">M</span></span>
+                                    </div>
+                                    <button type="button" onclick="addProduct('{{ $spss->id }}')"
+                                            class="sprice_btn">
+                                        <img src="{{ asset('frontend/images/icons/add-cart.png') }}"
+                                             alt="">
+                                        <span>Səbətə at</span>
+                                    </button>
+                                </div>
+                            </div>
+                        @endforeach
+
+                    </div>
+                </div>-->
+            </div><!-- /.counter-content -->
+            </div>
+            <div class="product-info container mt-2">
+                <div class="product-info-brand d-flex">
+                    <a href="#" class="col-8">
+                       <h3 class="product-info-brand-title"> Samsung Galaxy A04 (SM-A045) 32GB Green </h3> 
+                    </a>
+                    <!-- <img src="" class="col-4"/> -->
+                    <div class="col-4">Brand</div>
+                </div>
+                <a href="#" class="prod-info__image d-flex" >
+                    <img class="col-5" src="{{ asset('frontend/images/icons/add-cart.png') }}" alt="">
+                    <div class="product-info-labels col-7">
+                        <div class="product__label product__label--purple  m-1">
+                            <img src="" alt="">
+                            <span>Stokda var</span>
+                        </div>
+                        <div class="product__label product__label--purple m-1">Faizsiz təklif</div>
+                        <div class="product__label product-label-only-border m-1"> Ucuz tapsan, endirimlə al </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product-info-bottom container d-flex" >
+                <div class="product-info-bottom-price col-5 p-0">
+                    <p class="old-price">299.99 AZN</p>
+                    <p class="new-price">279.99 AZN</p>
+                </div>
+                <div class="prod-info__bottom__buttons col-7 p-0">
+                    <a href="" class="btn btn-orange btn--with_icon p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="2.2rem"> <use xlink:href="#svg-click"></use> </svg>
+                        Bir kliklə al
+                    </a>
+                    <a href="" class="week_product_add btn btn-green">
+                        <img src="{{ asset('frontend/images/icons/add-cart.png') }}" alt="" class="add-cart-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+<section class="flat-row flat-banner-box">
+    <div class="container custom-container">
+        <div class="row">
+            <div class="wrap-banner wrap_banner">
+                <div class="banner-box style1">
+                    @foreach($banners as $banner)
+                        <div class="inner-box">
+                            <a href="{{ $banner->trans->url }}" title="{{ $banner->trans->url }}" target="_blank">
+                                <img src="{{ asset('/images/banner/'.$banner->image) }}" alt="banner">
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@if(count($endirimliMehsullar))
+    <section class="flat-imagebox style7 discount-top">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-md-12 plr-zero">
+                    <div class="flat-row-title">
+                        <h3>ENDİRİMLİ MƏHSULLAR</h3>
+                    </div>
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="wrap-most-view">
+                    <div class="owl-carousel-6 owl_carousel_6">
+                        @foreach(\App\Http\Helpers::productWithDiscount() as $key => $product)
+                            @if($key == 12)
+                                @break
+                            @endif
+                            <div class="imagebox style4">
+                                <div class="box-image">
+                                    <a href="{{ route('site.product.show', [\App\Http\Helpers::recursionParent($product->category)."/".$product->trans->slug_pr]) }}"
+                                       title="">
+                                        <img src="{{ asset('/images/product/x131/'.$product->image) }}" alt="">
+                                    </a>
+                                </div>
+                                <div class="box-content">
+                                    <div class="cat-name">
+                                        <a href="#"
+                                           title="">{{ $product->category ? $product->category->trans->name : '' }}</a>
+                                    </div>
+                                    <div class="product-name">
+                                        <a href="{{ route('site.product.show', [\App\Http\Helpers::recursionParent($product->category)."/".$product->trans->slug_pr]) }}"
+                                           title="">{{ $product->trans->name }}</a>
+                                    </div>
+                                    <div class="product_price">
+                                        <div class="price">
+                                            @if($product->have_discount)
+                                                <span class="regular">{{ $product->price }}<span class="azcurrency">M</span></span>
+                                            @endif
+                                            <span class="sale">{{ $product->disCountPrice() }}<span
+                                                        class="azcurrency">M</span></span>
+                                        </div>
+                                        <!-- after added to bag add this class "added_btn" -->
+                                        <button type="button" onclick="addProduct('{{ $product->id }}')"
+                                                class="sprice_btn product_add_btn">
+                                            <img src="{{ asset('frontend/images/icons/add-cart.png') }}" alt="">
+                                            Səbətə at
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@endif
+<section class="flat-imagebox style1 pp40 best-sale-products">
+    <div class="container custom-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="flat-row-title">
+                    <h3>Ən çox satılanlar</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="owl-carousel-19">
+                @foreach(\App\Http\Helpers::mostSellProducts()->chunk(2) as $key => $chunk)
+                    @if($key == 12)
+                        @break
+                    @endif
+                    <div class="owl-carousel-item">
+                        @foreach($chunk as $product)
+                            <div class="product-box style1 v1">
+                                <div class="imagebox style1">
+                                    <div class="box-image">
+                                        <a href="{{ route('site.product.show',[\App\Http\Helpers::recursionParent($product->category)."/".$product->trans->slug_pr]) }}"
+                                           title="">
+                                            <img src="{{ asset('/images/product/x120/'.$product->image) }}" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="cat-name">
+                                            <a href="#"
+                                               title="">{{ $product->category ? $product->category->trans->name : '' }}</a>
+                                        </div>
+                                        <div class="product-name">
+                                            <a href="{{ route('site.product.show', [\App\Http\Helpers::recursionParent($product->category)."/".$product->trans->slug_pr]) }}"
+                                               title="">{{ $product->trans->name }}</a>
+                                        </div>
+                                        <div class="price">
+                                            @if($product->have_discount)
+                                                <span class="regular">{{ $product->price }}<span class="azcurrency">M</span></span>
+                                            @endif
+                                            <span class="sale">{{ $product->disCountPrice() }}<span
+                                                        class="azcurrency">M</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="box-bottom">
+                                        <div class="btn-add-cart add__cart">
+                                            <button type="button" onclick="addProduct('{{ $product->id }}')"
+                                                    class="sprice_btn product_add_btn">
+                                                <img src="{{ asset('frontend/images/icons/add-cart.png') }}" alt="">Səbətə
+                                                at
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                @endforeach
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="flat-row tv-row mb0">
+    <div class="container custom-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="tv-title" style="color: black;font-weight: 800;">Minor TV</h4>
+            </div>
+            <div class="col-md-12">
+                <div class="tv-items owl-carousel">
+                    @foreach($videos as $video)
+                        <div class="tv-item vid">
+                            <div class="tv-img">
+                                <img src="{{ asset('images/video-photo/'.$video->image) }}" alt="">
+                                <div class="tv-play" data-toggle="modal" data-id="{{ $video->id }}"
+                                     data-link="{{ $video->link }}" data-target="#tvPlay">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="tv-name"><a href="javascript:;">{{ $video->title }}</a></div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@include('front.particles._footer2')
+<section class="flat-row flat-brand">
+    <div class="container custom-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="flat-row-title">
+                    <h3>PARTNYORLAR</h3>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <ul class="owl-carousel-5">
+                    @foreach(\App\Http\Helpers::partners() as $partner)
+                        <li>
+                            <a href="{{ $partner->url }}" onclick="return false" target="_blank">
+                                <img src="{{ asset('/images/portfolio/'.$partner->image) }}" alt="">
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
