@@ -99,7 +99,7 @@
     font-weight: 700;
 }
 
-.btn{
+.product-info-btn{
    display: inline-flex;
    border-radius: 6px;
    border: 1px solid currentColor;
@@ -186,7 +186,7 @@
 .popular_or_new_active{
     opacity: 1;
 }
-.btn{
+.products-slider__arrows .btn{
     box-shadow: 0 20px 50px rgb(0 0 0 / 5%), 0 5.94853px 15.1177px rgb(0 0 0 / 3%), 0 3.13211px 7.0172px rgb(0 0 0 / 3%), 0 1.1945px 3.02304px rgb(0 0 0 / 2%);
     width: 3.3rem;
     height: 3.3rem;
@@ -201,6 +201,7 @@
 .arrow{
     font-size: 1rem;
     font-weight: 300;
+    align-self: center;
 }
 
 
@@ -445,6 +446,7 @@ color: #f6861f;
     background-color: #fafbfc;
     border-radius: 6px;
     padding: 0.5rem;
+    margin-bottom: 5px;
 }
 .product__price__list__taksit{
     display: flex;
