@@ -23,6 +23,8 @@
     font-size: 0.9rem;
     line-height: 2rem;
     letter-spacing: -.02em;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 8px;
 }
 .special-offer{
     border:2px solid #ffd436 ;
