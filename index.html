@@ -14,7 +14,7 @@
     
 </head>
 <body>
-    <div class="container mt-2">
+    <div class="container-fluid mt-2">
         <section class="row banner d-flex mt-2 mb-2 p-0">
             <div class=" col-8 p-0">
                 <div class="slider">
@@ -74,8 +74,8 @@
                 </div>
             </div> 
         </section>
-        <section class="row services mt-4">
-           <div class="row services-row">
+        <section class="row services mt-4 p-0">
+           <div class="row services-row p-0">
                 <div class="services-item col">
                     <div class="services-item-info">
                         <i class="fa services-icon fa-percent" aria-hidden="true"></i>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="services-item col">
-                    <div class="services-item-info">
+                    <div class=" services-item-info-last">
                         <i class="fa services-icon fa-shield" aria-hidden="true"></i>
                         <a href="#" class="services-info">Sənə uyğun zəmanət və servis</a>
                     </div>
@@ -110,12 +110,12 @@
                 </h2>
                 <div class="products-slider__arrows">
                     
-                    <span class="btn btn--previous">
+                    <button class="btn btn--previous">
                         <i class="fa fa-arrow-left arrow" aria-hidden="true"></i>
-                    </span>
-                    <span class="btn btn--next">
+                    </button>
+                    <button class="btn btn--next">
                         <i class="fa fa-arrow-right arrow" aria-hidden="true"></i>
-                    </span>
+                    </button>
                 </div>
             </div>
             <div class="products-slider__slides flickity-enabled is-draggable">
@@ -476,7 +476,7 @@
             </div>
         </section>
         <section class="row partners mt-3">
-            <div class="container-fluid">
+            <div class="p-0">
                 <h1 class="partner-title">Partnyorlar</h1>
                 <hr class="mb-4"/>
                 <div class="partners__row flickity-enabled is-draggable">
@@ -525,12 +525,12 @@
                 </h2>
                 <div class="products-slider__arrows">
                     
-                    <span class="btn btn--previous">
+                    <button class="btn btn--previous">
                         <i class="fa fa-arrow-left arrow" aria-hidden="true"></i>
-                    </span>
-                    <span class="btn btn--next">
+                    </button>
+                    <button class="btn btn--next">
                         <i class="fa fa-arrow-right arrow" aria-hidden="true"></i>
-                    </span>
+                    </button>
                 </div>
             </div>
             <div class="products-slider__slides flickity-enabled is-draggable">
@@ -890,13 +890,10 @@
                 </div>
             </div>
         </section>
-        <section class="row video-block">
-            <div class="container-fluid">
-                <a href="#" class="youtube-link btn btn-red btn--with_icon">
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                    Youtube hesabına keç 
-                </a>
-                <h2>
+        <section class="row video-block mb-3 mt-3">
+            <div class="p-0">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h2 class="h2 mb-3">
                     <a href="#" class="video_tab_links active">
                         Məhsul icmalı
                     </a>
@@ -904,14 +901,20 @@
                         İrşad Youtube
                     </a>
                 </h2>
+                <a href="#" class="youtube-link btn btn-red btn--with_icon">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    Youtube hesabına keç 
+                </a>
+                
+                </div>
+                
                 <div class="tab-body">
                     <div class="row video-block__slider">
-                        <div class="col-md-4">
+                        <div class="col-md-4 p-0">
                             <div class="video-block__item">
                                 <a data-title='"Galaxy"də yeni ulduzlar var!' title="Videonu izlə" class="video-block__item__image">
-                                    <span>
+
                                         <img src="./images/maxresdefault.jpg" alt='"Galaxy"də yeni ulduzlar var!'/>
-                                    </span>
                                 </a>
                                 <a href="#" class="video-block__item__title"> "Galaxy"də yeni ulduzlar var! </a>
                                 <p> Galaxy-nin yeni ulduzları az öncə rəsmi olaraq təqdim edildi! 🔥🔥🔥
@@ -920,6 +923,35 @@
 Yeni 𝐒𝐚𝐦𝐬𝐮𝐧𝐠 𝐆𝐚𝐥𝐚𝐱𝐲 𝐒𝟐𝟑 seriyasında hansı yeniliklər var? Kamera, yaddaş və ya dizayn cəhətdən hansı dəyişikliklər edilib? Vaxt itirmədən yeni video icmalı izlə və yeni flaqmanını tezliklə "İrşad"dan əldə etməyə hazırlaş! 😎 
                                 </p>
                             </div>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="video-block__item">
+                                <a data-title='"Galaxy"də yeni ulduzlar var!' title="Videonu izlə" class="video-block__item__image">
+                                        <img src="./images/maxresdefault.jpg" alt='"Galaxy"də yeni ulduzlar var!'/>
+                                </a>
+                                <a href="#" class="video-block__item__title"> "Galaxy"də yeni ulduzlar var! </a>
+                                <p> Galaxy-nin yeni ulduzları az öncə rəsmi olaraq təqdim edildi! 🔥🔥🔥
+                                    <br>
+                                    
+Yeni 𝐒𝐚𝐦𝐬𝐮𝐧𝐠 𝐆𝐚𝐥𝐚𝐱𝐲 𝐒𝟐𝟑 seriyasında hansı yeniliklər var? Kamera, yaddaş və ya dizayn cəhətdən hansı dəyişikliklər edilib? Vaxt itirmədən yeni video icmalı izlə və yeni flaqmanını tezliklə "İrşad"dan əldə etməyə hazırlaş! 😎 
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="video-block__item">
+                                <a data-title='"Galaxy"də yeni ulduzlar var!' title="Videonu izlə" class="video-block__item__image">
+                                        <img src="./images/maxresdefault.jpg" alt='"Galaxy"də yeni ulduzlar var!'/>
+                                </a>
+                                <a href="#" class="video-block__item__title"> "Galaxy"də yeni ulduzlar var! </a>
+                                <p> Galaxy-nin yeni ulduzları az öncə rəsmi olaraq təqdim edildi! 🔥🔥🔥
+                                    <br>
+                                    
+Yeni 𝐒𝐚𝐦𝐬𝐮𝐧𝐠 𝐆𝐚𝐥𝐚𝐱𝐲 𝐒𝟐𝟑 seriyasında hansı yeniliklər var? Kamera, yaddaş və ya dizayn cəhətdən hansı dəyişikliklər edilib? Vaxt itirmədən yeni video icmalı izlə və yeni flaqmanını tezliklə "İrşad"dan əldə etməyə hazırlaş! 😎 
+                                </p>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
