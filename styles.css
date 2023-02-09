@@ -285,6 +285,7 @@ a{
     height: auto;
     border-radius: 0 !important;
     padding: 0.8rem;
+    padding-bottom: 0;
     margin: 0;
     display: inline-flex;
     flex-direction: column;
@@ -472,6 +473,7 @@ color: #f6861f;
 }
 .product__footer{
     margin-top: 1.6rem;
+    margin-bottom: 15px;
 }
 .product__price{
     margin-bottom: 0.2rem;
@@ -831,6 +833,7 @@ h2 a.active{
     font-weight: 500;
     font-size: 0.9rem;
     padding: 0.8rem 1.5rem;
+    
 }
 
 /* Partners */
