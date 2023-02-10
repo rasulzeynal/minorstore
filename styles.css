@@ -1096,6 +1096,9 @@ h2 a.active{
     }
 
     /* Products */
+    .flickity-viewport{
+        height: 520px;
+    }
     .product{
         width: calc(100%/4.07);
         height: 420px !important;
@@ -1116,6 +1119,13 @@ h2 a.active{
         font-weight: 500;
         line-height: 0.8rem;
     }
+    .product__colors{
+        margin: 0;
+        padding-left: 5px;
+    }
+    .product__star-comment{
+        margin-bottom: 0.5rem;
+    }
     .on{
         width: 0.6rem !important;
         height: 0.6rem !important;
@@ -1128,6 +1138,11 @@ h2 a.active{
     .comment-count{
         margin-left: 0.1rem;
         font-size: 0.6rem;
+    }
+    .product__label{
+        margin-bottom: 6px !important;
+        padding: 0.2rem 0.3rem !important;
+        font-size: 0.6rem !important;
     }
     .product__price .old-price{
         font-size: 0.5rem;
