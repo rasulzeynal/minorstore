@@ -1256,7 +1256,8 @@ h2 a.active{
     padding: 14px 21px;
 }
 .product-info-labels{
-    
+    display: flex;
+    flex-direction: column;
 }
 .product__label{
     font-size: 0.65rem;
@@ -1264,10 +1265,21 @@ h2 a.active{
     font-weight: 500;
     padding: 0.3rem 0.5rem;
     margin-top: 5px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+}
+.product__label span{
+    font-size: 12px;
+    line-height: 12px;
 }
 .icon{
     font-size: 16px;
     margin-right: 4px;
+}
+.product__footer{
+    margin-top: 10px !important;
 }
 .product-info-bottom{
     margin-top: 1rem;
@@ -1311,6 +1323,9 @@ h2 a.active{
 }
 .products-slider__slides{
     border-radius: 8px 0 0 8px;
+    
+}
+.flickity-viewport{
 }
 .product{
     width: 85%;
@@ -1318,6 +1333,117 @@ h2 a.active{
 }
 .product__tools_a{
     margin-left: 20px;
+}
+.product__type{
+    font-size: 12px;
+    line-height: 20px
+}
+.product__name{
+    font-size: 14px;
+    line-height: 20px;
+}
+.product__star-comment{
+    margin-bottom: 16px;
+}
+.star-rating li{
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 2px;
+}
+.comment-count{
+    font-size: 13px;
+}
+.comment-count i{
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+.product__labels{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product__label{
+    font-size: 12px !important;
+    line-height: 12px !important;
+    padding: 8px !important;
+    margin-bottom: 8px !important;
+    min-height: 32px !important;
+}
+.product__label i{
+    width: 17px;
+    height: 20px;
+    margin-right: 6px;
+}
+.product__footer{
+    margin-top: 40px;
+}
+.old-price{
+    font-size: 13px!important;
+    line-height: 16px!important
+}
+.new-price{
+    font-size: 22px!important;
+    line-height: 28px!important;
+}
+.product__price__list{
+    border-radius: 6px;
+    padding: 0.5rem;
+    margin-bottom: 5px;
+}
+.product__price__list__taksit label{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding: 2px 0.7rem;
+    border-radius: 4px;
+}
+.product__price__list__taksit-price{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    margin-top: 0.4rem;
+}
+.product__to-cart{
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1.1rem 2rem;
+    margin: 0;
+}
+.product__to-cart i{
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    font-size: 1rem;
+}
+
+/* Partners */
+.partners__row{
+    margin: 0;
+}
+.partners__row .flickity-viewport{
+    height: 5rem;
+}
+.partners__cell{
+    width:42% ;
+    padding: 0 12px;    
+}
+.partners__cell:nth-child(n+3){
+    display: none;  
+}
+.partners__item{
+    height: 5rem;
+    border-radius: 8px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+.video-block{
+    display: none;
 }
 }
 
