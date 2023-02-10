@@ -207,7 +207,7 @@
     text-decoration: none!important
 }
 
-/*  */
+/* populars_new_products_choose */
 
 .populars_new_products_choose{
     font-weight: 600;
@@ -1209,6 +1209,115 @@ h2 a.active{
 }
 .slider-image{
     height: 200px !important;
+}
+.banner-slider-offer{
+    width: 100%;
+    height: 337px;
+}
+.special-offer-header{
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    letter-spacing: -.02em;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 8px;
+}
+.item-special{
+    padding: 10px 0 10px 20px;
+}
+.time{
+    padding: 10px 20px 10px 0;
+}
+.product-info{
+    padding: 20px !important;
+}
+.product-info-brand{
+    display: flex;
+    justify-content: space-between;
+}
+.product-info-brand-title{
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 700;
+}
+.product-info_brand{
+    width: 80px;
+    height: 15px;
+    margin-top: 5px;
+}
+.product-info-image{
+    font-weight: 400;
+    transition: .3s;
+    margin-top: 15px;
+}
+.product-image{
+    width: 160px;
+    height: 150px;
+    padding: 14px 21px;
+}
+.product-info-labels{
+    
+}
+.product__label{
+    font-size: 0.65rem;
+    line-height: 1rem;
+    font-weight: 500;
+    padding: 0.3rem 0.5rem;
+    margin-top: 5px;
+}
+.icon{
+    font-size: 16px;
+    margin-right: 4px;
+}
+.product-info-bottom{
+    margin-top: 1rem;
+}
+.old-price{
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1rem;
+    margin-bottom: 2px;
+}
+.new-price{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+.product-info-btn{
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+    font-size: 0.9rem;
+    height: 100%;
+ }
+ /* Services */
+
+ .services{
+    display: none;
+}
+
+/* populars_new_products */
+.populars_new_products{
+    margin: 30px ;
+}
+.populars_new_products_choose{
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.products-slider__arrows{
+    display: none;
+}
+.products-slider__slides{
+    border-radius: 8px 0 0 8px;
+}
+.product{
+    width: 85%;
+    height: auto;
+}
+.product__tools_a{
+    margin-left: 20px;
 }
 }
 
