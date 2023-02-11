@@ -1198,17 +1198,17 @@ h2 a.active{
 
 @media (max-width:768px) {
     .banner{
-        display: block !important;
+        display: block;
    }
    .banner-slider{
     width: 100% ;
     margin-bottom: 20px;
    }
    .slider{
-    margin-right: 0 !important;
+    margin-right: 0;
 }
 .slider-image{
-    height: 200px !important;
+    height: 200px;
 }
 .banner-slider-offer{
     width: 100%;
@@ -1228,79 +1228,76 @@ h2 a.active{
 .time{
     padding: 10px 20px 10px 0;
 }
-.product-info{
+.special-offer .product-info{
     padding: 20px !important;
 }
-.product-info-brand{
+.special-offer .product-info-brand{
     display: flex;
     justify-content: space-between;
 }
-.product-info-brand-title{
+.special-offer .product-info-brand-title{
     font-size: 1rem;
     line-height: 1.3rem;
     font-weight: 700;
 }
-.product-info_brand{
+.special-offer .product-info_brand{
     width: 80px;
     height: 15px;
     margin-top: 5px;
 }
-.product-info-image{
-    font-weight: 400;
-    transition: .3s;
+.special-offer .product-info-image{
     margin-top: 15px;
 }
-.product-image{
-    width: 160px;
-    height: 150px;
-    padding: 14px 21px;
+.special-offer .product-image{
+    width: 150px;
+    height: 140px;
 }
-.product-info-labels{
+.special-offer .product-info-labels{
     display: flex;
     flex-direction: column;
 }
-.product__label{
-    font-size: 0.65rem;
+.special-offer .product__label{
+    font-size: 0.40rem;
     line-height: 1rem;
     font-weight: 500;
-    padding: 0.3rem 0.5rem;
-    margin-top: 5px;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 5px;
     width: fit-content;
     display: flex;
     align-items: center;
     align-self: flex-end;
 }
-.product__label span{
+.special-offer .product__label span{
     font-size: 12px;
-    line-height: 12px;
+    line-height: 15px;
 }
-.icon{
+.special-offer .icon{
     font-size: 16px;
     margin-right: 4px;
 }
-.product__footer{
-    margin-top: 10px !important;
+.special-offer .product-info-bottom{
+    margin-bottom: 0.5rem;
 }
-.product-info-bottom{
-    margin-top: 1rem;
-}
-.old-price{
-    font-size: 0.8rem;
-    font-weight: 700;
+.special-offer .old-price{
+    font-size: 0.7rem;
+    font-weight: 600;
     line-height: 1rem;
     margin-bottom: 2px;
 }
-.new-price{
-    font-size: 1.6rem;
+.special-offer .new-price{
+    font-size: 1.4rem;
     line-height: 2rem;
-    font-weight: 700;
+    font-weight: 600;
 }
-.product-info-btn{
+.special-offer .product-info-btn{
     border-radius: 6px;
     font-weight: 600;
-    padding: 1.2rem 1rem 1.2rem 1rem;
-    font-size: 0.9rem;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    font-size: 0.8rem;
     height: 100%;
+ }
+ .special-offer .btn-green i{
+    font-size: 1.1rem;
  }
  /* Services */
 
@@ -1321,15 +1318,16 @@ h2 a.active{
 .products-slider__arrows{
     display: none;
 }
-.products-slider__slides{
-    border-radius: 8px 0 0 8px;
-    
-}
 .flickity-viewport{
+    width: 100%;
+    height: 612px;
 }
 .product{
     width: 85%;
-    height: auto;
+    height: 612px;
+}
+.product:nth-child(n+2){
+    display: none;
 }
 .product__tools_a{
     margin-left: 20px;
@@ -1362,7 +1360,7 @@ h2 a.active{
     display: flex;
     flex-wrap: wrap;
 }
-.product__label{
+.product .product__label{
     font-size: 12px !important;
     line-height: 12px !important;
     padding: 8px !important;
