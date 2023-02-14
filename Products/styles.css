@@ -221,6 +221,11 @@
 .product__label--light-orange {
   color: #f6861f !important;
 }
+.product__label--purple {
+  background: rgba(23, 67, 223, 0.07);
+  color: #1743df !important;
+  border: none;
+}
 .product__footer {
   margin-top: 0.6rem;
   margin-bottom: 15px;
@@ -484,6 +489,107 @@
   .product{
     width: 100%;
     padding: 1.2rem;
-    padding-bottom: 0;
+  }
+  .product__tools_a {
+    margin-left: 2rem;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+  .icon-p {
+    width: 2rem;
+    height: 1.3rem;
+    font-size: 1.1rem;
+  }
+  .product__img a img {
+    width: 227px;
+    height: 150px;
+  }
+  .product__type {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .product__name {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .product__colors {
+    margin: 0.2rem 0;
+    padding: 0;
+  }
+  .star-rating li {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.2rem;
+  }
+  .comment-count {
+    font-size: 0.8rem;
+  }
+  .comment-count i {
+    margin-right: 0.3rem;
+    font-size: 1rem;
+  }
+  .product__labels .product__label {
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    margin-top: 0;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    min-height: 1.8rem;
+    margin-right: 0.6rem;
+  }
+  .product__label i {
+    font-size: 1rem;
+    margin-right: 0.3rem;
+  }
+  .product__footer {
+    margin-top: 0.6rem;
+    margin-bottom: 15px;
+  }
+  .product__price {
+    margin-bottom: 0.2rem;
+  }
+  .product__price .old-price {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .product__price .new-price {
+    font-size: 1.4rem;
+    line-height: 1rem;
+    margin-top: 0.3rem;
+    font-weight: 600;
+  }
+  .product__price__list {
+    border-radius: 6px;
+    padding: 0.5rem;
+    margin-bottom: 5px;
+  }
+  .product__price__list__taksit label {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 2px 0.2rem;
+    border-radius: 4px;
+  }
+  .product__price__list__taksit-price {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+  }
+  .product__to-cart {
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    margin: 0;
+  }
+  .product__to-cart i {
+    font-size: 1.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
 }
